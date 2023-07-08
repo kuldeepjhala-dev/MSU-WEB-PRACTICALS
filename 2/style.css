@@ -1,0 +1,15 @@
+.msu_heading {
+  font-size: 30px;
+  font-family: Calibri;
+  text-transform: uppercase;
+  color: black;
+}
+
+.msu_sub_heading {
+  font-size: 22px;
+  font-family: Calibri;
+  text-transform: uppercase;
+  color: orange;
+  font-weight: bold;
+  text-align: left;
+}
