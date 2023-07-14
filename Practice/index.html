@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        width: 80vw;
+        height: 25vh;
+        padding: 0.5em;
+        background-color: cornflowerblue;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        /* flex-wrap: nowrap;
+        justify-content:left; 
+        align-items: start;  */
+      }
+      .item {
+        background-color: burlywood;
+        margin: 0.5em;
+      }
+      .one {
+        /* flex-grow: 0;
+        flex-shrink: 1;
+        flex-grow: 250px; */
+        flex: 0 1 250px;
+      }
+
+      .two {
+        flex: 0 1 250px;
+        align-self: center;
+        /* order: 1;
+        order: 0;
+        order: -1; */
+      }
+      .three {
+        flex: 0 1 250px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item one">Flex item 1</div>
+      <div class="item two">Flex itme 2</div>
+      <div class="item three">Flex itme 3</div>
+    </div>
+  </body>
+</html>
