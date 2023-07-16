@@ -1,0 +1,15 @@
+.heading {
+  background-color: #0098db;
+  height: 40px;
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+}
+
+.sub-heading {
+  align-content: center;
+}
+
+.social-media {
+  align-content: center;
+}
