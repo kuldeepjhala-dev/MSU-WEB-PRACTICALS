@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .fcontainer {
+        display: flex;
+        border: 2px solid gray;
+        height: 45vh;
+        /* flex-direction: column-reverse; */
+        /* justify-content: center; */
+        /* justify-content: flex-end; */
+        /* justify-content: flex-start; */
+        /* align-items: flex-end; */
+        /* align-items: flex-start; */
+        /* align-items: center; */
+        /* flex-wrap: wrap; */
+        /* flex-wrap: wrap-reverse; */
+        /* flex-flow: column wrap; */
+      }
+      .fitem {
+        background-color: red;
+        border: 2px solid black;
+        width: 122px;
+        height: 122px;
+        margin: 12px;
+      }
+      .item1 {
+        /* order: 1; */
+        flex-grow: 3;
+      }
+      .item2 {
+        flex-grow: 1;
+        flex-shrink: 3;
+        align-self: center;
+      }
+      .item3 {
+        flex-grow: 1;
+
+      }
+      .item4 {
+        flex-grow: 3;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="fcontainer">
+      <div class="fitem item1">Flex item 1</div>
+      <div class="fitem item2">Flex itme 2</div>
+      <div class="fitem item3">Flex itme 3</div>
+      <div class="fitem item4">Flex itme 4</div>
+    </div>
+  </body>
+</html>
