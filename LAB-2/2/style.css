@@ -1,15 +1,28 @@
 .heading {
   background-color: #0098db;
-  height: 40px;
   display: flex;
   justify-content: space-around;
-  align-content: center;
+  align-items: center;
 }
 
 .sub-heading {
-  align-content: center;
+  display: flex;
+  color: white;
+  font-size: small;
+}
+
+.heading-dash {
+  padding: 10px 0px;
 }
 
 .social-media {
-  align-content: center;
+  display: flex;
+}
+
+i {
+  padding: 10px 20px;
+}
+
+.heading-name {
+  padding: 10px;
 }
