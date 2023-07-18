@@ -26,3 +26,57 @@ i {
 .heading-name {
   padding: 10px;
 }
+
+.heading_2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo_clg_name {
+  display: flex;
+  margin-left: 100px;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  justify-content: center;
+}
+
+.msu_heading {
+  color: black;
+  font-size: 30px;
+  line-height: 1.2;
+  font-family: Calibri;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding-top: 30px;
+  padding-left: 20px;
+}
+
+.naac_logo {
+  margin-right: 100px;
+  margin-top: 20px;
+}
+
+.heading_3 {
+  display: flex;
+  width: 100%;
+  background-color: #202c45;
+  justify-content: center;
+  font-family: Calibri;
+  font-size: 18px;
+}
+.home_logo_and_sub_links {
+  display: flex;
+  align-content: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.sub_links {
+  justify-content: center;
+}
+
+.sub_link_padding {
+  padding-top: 10px;
+  padding-left: 30px;
+  color: white;
+}
