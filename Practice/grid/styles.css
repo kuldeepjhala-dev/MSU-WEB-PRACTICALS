@@ -21,6 +21,8 @@
   place-items: center;
 }
 
+/* grid inline and grid block property */
+
  .item {
   background-color: aqua;
   height: 122px;
