@@ -231,9 +231,128 @@ i {
   margin-left: 30px;
 }
 
-.nc_parent{
-  background-color: #a01f40;
+.nc_parent {
   margin: 35px 150px;
   height: 1000px;
 }
 
+.nc_heading {
+  height: 70px;
+  width: 100%;
+  background-color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+.nc_news_heading {
+  display: flex;
+}
+
+.nc_heading_icon {
+  margin-top: 15px;
+  margin-left: -10px;
+}
+
+.nc_title {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  line-height: 1.42857143;
+  font-size: 24px;
+  margin-top: 10px;
+}
+
+.nc_title_color {
+  color: #0098db;
+}
+
+.nc_view_all_button {
+  background-color: #0098db;
+  height: 20px;
+  width: 90px;
+  text-align: center;
+  padding: 5px;
+  margin: 10px;
+}
+
+.news_event_parent {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(5, 1fr);
+  row-gap: 15px;
+  column-gap: 15px;
+}
+
+.newspaper_news {
+  border-left: 6px solid #0098db;
+  border-right: 1px solid gray;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+  height: 170px;
+  width: 533px;
+  background-color: whitesmoke;
+  display: flex;
+}
+
+.sandesh_news_paper {
+  height: 150px;
+  width: 100px;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.newspaper_content {
+  margin-top: 10px;
+  margin-right: 10px;
+  width: 400px;
+  margin-bottom: 10px;
+}
+
+.newspaper_content_title{
+  height: 49px;
+  font-size: 16px;
+  text-align: justify;
+  color: #555555;
+  font-weight: 700;
+}
+
+.newspaper_content_date{
+  height: 24px;
+  
+
+  margin-top: 10px;
+  font-size: 15px;
+  font-family: 'Open Sans', sans-serif;
+  color: #555555;
+}
+
+.small_calender{
+  margin-left: -20px;
+  margin-right: -20px;
+}
+
+.newspaper_content_newspaper_name{
+  height: 24px;
+  
+  
+  margin-top: 10px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  font-weight: 900;
+  color: #555555;
+}
+
+.newspaper_content_edition{
+height: 24px;
+
+  margin-top: 10px;
+  color: #555555;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  font-weight: 900;
+}
+
+.newspaper_sub-title_span{
+  font-weight: 400;
+}
