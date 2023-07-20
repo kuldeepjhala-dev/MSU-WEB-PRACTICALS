@@ -117,3 +117,123 @@ i {
   font-family: Calibri;
   text-transform: uppercase;
 }
+
+.direct_links {
+  background-color: white;
+  padding-left: 120px;
+  padding-right: 120px;
+  padding-top: 20px;
+  display: grid;
+  height: 127px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 40px 40px;
+  row-gap: 12px;
+  column-gap: 25px;
+}
+
+.d_links {
+  border-radius: 5px;
+  font-size: medium;
+  color: white;
+}
+
+.d_51 {
+  background-color: #da670f;
+}
+
+.d_52 {
+  background-color: #a01f40;
+}
+
+.d_53 {
+  background-color: #d72b2b;
+}
+
+.d_54 {
+  background-color: #48cfad;
+}
+
+.d_55 {
+  background-color: #777293;
+}
+
+.d_56 {
+  background-color: #ef6f56;
+}
+
+.events_moving {
+  background-color: #0098db;
+  height: 50px;
+}
+
+.events_headline {
+  color: white;
+  display: inline;
+  font-size: larger;
+  font: 1em sans-serif;
+}
+
+.white_space {
+  height: 20px;
+  background-color: white;
+}
+
+.welcome_message {
+  background-color: #364157;
+  /* height: 300px; */
+  display: flex;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.welcome_message_data {
+  color: white;
+  line-height: 1.7;
+  font-family: "Open Sans", sans-serif;
+  display: block;
+}
+
+.msg_one {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.msg_two {
+  font-size: 22px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.msg_three {
+  line-height: 1.7;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.msg_four {
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.msg_five {
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.welcome_ms_image {
+  height: 320px;
+  width: 290px;
+  margin-left: 30px;
+}
+
+.nc_parent{
+  background-color: #a01f40;
+  margin: 35px 150px;
+  height: 1000px;
+}
+
