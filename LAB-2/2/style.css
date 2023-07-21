@@ -309,7 +309,7 @@ i {
   margin-bottom: 10px;
 }
 
-.newspaper_content_title{
+.newspaper_content_title {
   height: 49px;
   font-size: 16px;
   text-align: justify;
@@ -317,42 +317,89 @@ i {
   font-weight: 700;
 }
 
-.newspaper_content_date{
+.newspaper_content_date {
   height: 24px;
-  
-
   margin-top: 10px;
   font-size: 15px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   color: #555555;
 }
 
-.small_calender{
+.small_calender {
   margin-left: -20px;
   margin-right: -20px;
 }
 
-.newspaper_content_newspaper_name{
+.newspaper_content_newspaper_name {
   height: 24px;
-  
-  
   margin-top: 10px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 12px;
   font-weight: 900;
   color: #555555;
 }
 
-.newspaper_content_edition{
-height: 24px;
-
+.newspaper_content_edition {
+  height: 24px;
   margin-top: 10px;
   color: #555555;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 12px;
   font-weight: 900;
 }
 
-.newspaper_sub-title_span{
+.newspaper_sub-title_span {
   font-weight: 400;
+}
+
+.data_of_msu {
+  background-color: #364157;
+  height: 350px;
+  width: 1225px;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 40px;
+}
+
+.data_of_msu_grid_parent {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  column-gap: 10px;
+  row-gap: 60px;
+}
+
+.data_msu {
+  text-align: center;
+}
+
+.data_msu_numbers {
+  color: white;
+  font-size: 38px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.data_msu_title {
+  font-size: 14px;
+  font-weight: 200;
+  text-transform: uppercase;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+}
+
+.youtube_video_link {
+  margin-right: 20px;
+  height: 320px;
+  width: 600px;
+}
+
+.data_of_msu_redesign{
+  background-color: #202C45;
+  height: 150px;
+}
+
+.nc_parent_redesign{
+  height: 200px;
 }
