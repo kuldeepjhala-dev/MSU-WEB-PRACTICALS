@@ -1,0 +1,15 @@
+.navbar{
+    background-color: rgb(130, 183, 49);
+    width: fit-content;
+}
+
+
+.navbar li{
+    list-style: none;
+    padding: 3px 3px;
+    margin-left: -20px;
+    color: white;
+    font-size: 20px;
+    margin-right: 20px;
+    text-align: center;
+}
