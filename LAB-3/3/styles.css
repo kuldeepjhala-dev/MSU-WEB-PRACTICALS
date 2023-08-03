@@ -1,0 +1,28 @@
+.heading {
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+}
+
+/* .img_size {
+  height: 250px;
+  width: 550px;
+  border-radius: 10px;
+}
+
+.container {
+  margin-bottom: 20px;
+} */
+
+.row > div {
+  padding: 0 4px !important;
+}
+
+img {
+  margin-top: 8px;
+  vertical-align: middle;
+  margin-bottom: 8px;
+}
+
+.one{
+    height: 100px;
+}
