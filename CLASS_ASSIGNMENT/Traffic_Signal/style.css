@@ -9,23 +9,31 @@ body {
   border-color: black;
   border-style: solid;
   background-color: lightslategray;
+  border-radius: 10px;
 }
 
 .child {
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  border: 3px dotted black;
+  border: 1px solid black;
   margin: 20px;
+}
+
+.active {
+  opacity: 1;
 }
 
 .color-red {
   background-color: red;
+  opacity: 0.3;
 }
 
 .color-yellow {
-  background-color: yellow;
+  background-color: orange;
+  opacity: 0.3;
 }
 .color-green {
   background-color: green;
+  opacity: 0.3;
 }

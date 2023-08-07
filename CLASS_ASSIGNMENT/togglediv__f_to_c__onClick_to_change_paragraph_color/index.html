@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function() {
+            $("#myBtn").click(function() {
+                if($("#myBtn").text() == "-")
+                {
+                    $("#myDiv").hide();
+                    $("#myBtn").text("+");
+                }
+                else if($("#myBtn").text() == "+")
+                {
+                    $("#myDiv").show();
+                    $("#myBtn").text("-");
+                }
+            });
+            $("#myPara").click(function(){
+                $("#myPara").css("background-color","red");
+            });
+            $("#ftoc").click(function(){
+                var f = $("#f").val();
+                var c = (f-32)*5/9;
+                $("#c").val(c);
+            });
+        });
+    </script>
+</head>
+<body>
+    <button type="button" id="myBtn">-</button>
+    <div id="myDiv">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit fugit dolore facere nihil ullam minus illo, sunt omnis distinctio quod corporis quia nostrum nam voluptas aperiam nulla maiores unde porro!
+    </div>
+    <p id="myPara">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit fugit dolore facere nihil ullam minus illo, <br />
+        sunt omnis distinctio quod corporis quia nostrum nam voluptas aperiam nulla maiores unde porro!
+    </p><br/>
+    Farhenheit : <input type="number" id="f" />
+    <button type="button" id="ftoc">Convert</button>
+    Celcius : <input type="number" id="c" />
+</body>
+</html>

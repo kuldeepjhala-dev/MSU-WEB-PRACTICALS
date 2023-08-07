@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent {
+            position: absolute;
+            height: 300px;
+        }
+        .cycle-body {
+            left: 2%;
+            position: relative;
+            height: 200px;
+            z-index: 10;
+        }
+        .cycle-wheel {
+            display: inline;
+            top: 10%;
+            height: 125px;
+            position: relative;
+            z-index: -10;
+        }
+        .left {
+            right: 57%;
+        }
+        .right {
+            left: -42%;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <img src="Cycle_Frame.jpeg" alt="JOE MAMA" class="cycle-body">
+        <img src="Cycle_Wheel.jpeg" alt="JOE MAMA" class="cycle-wheel left">
+        <img src="Cycle_Wheel.jpeg" alt="JOE MAMA" class="cycle-wheel right">
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <script>
+        $().ready(() => {
+            $(".parent").animate({ left: '500px' }, 12000);
+            $(".cycle-wheel").animate({ rotate: '360deg' }, 12000);
+        });
+    </script>
+</body>\
+</html>

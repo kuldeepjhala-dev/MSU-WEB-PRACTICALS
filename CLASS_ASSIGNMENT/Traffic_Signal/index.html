@@ -3,20 +3,42 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <title>Practical-2</title>
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.js"
+      integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $().ready(function () {
+        color_red();
+        function color_red() {
+          $(".color-red").css("opacity", "1");
+          $(".color-yellow").css("opacity", "0.3");
+          $(".color-green").css("opacity", "0.3");
+          setTimeout(color_yellow, 90000);
+        }
+        function color_yellow() {
+          $(".color-yellow").css("opacity", "1");
+          $(".color-red").css("opacity", "0.3");
+          $(".color-green").css("opacity", "0.3");
+          setTimeout(color_green, 4000);
+        }
+        function color_green() {
+          $(".color-green").css("opacity", "1");
+          $(".color-red").css("opacity", "0.3");
+          $(".color-yellow").css("opacity", "0.3");
+          setTimeout(color_red, 30000);
+        }
+      });
+    </script>
   </head>
   <body>
     <div class="parent">
-        <div class="child color-red">
-            
-        </div>
-        <div class="child color-yellow">
-            
-        </div>
-        <div class="child color-green">
-            
-        </div>
+      <div class="active child color-red"></div>
+      <div class="child color-yellow"></div>
+      <div class="child color-green"></div>
     </div>
   </body>
 </html>

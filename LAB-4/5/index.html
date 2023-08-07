@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #keyCode_label {
+        display: inline;
+      }
+      #keyPressedOutput {
+        display: inline;
+      }
+    </style>
+  </head>
+  <body id="body">
+    Press key:
+    <input
+      type="text"
+      size="40"
+      onkeypress="myFun(event)"
+      onkeyup="keyupFunction()"
+      onkeydown="keyDownFunction()"
+    />
+    <br />
+    <p id="keyCode_label">Key Code:-</p>
+    <p id="keyPressedOutput"></p>
+    <script src="index.js"></script>
+  </body>
+</html>
