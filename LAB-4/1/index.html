@@ -4,15 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      .btn_ply{
+        margin: 10px;
+      }
+    </style>
   </head>
-  <body>
-    <video id="vdo" src="video_1.mp4" controls></video><br />
+  <body style="background-color: bisque;">
+    <video id="vdo" src="video_1.mp4" controls style="margin-left: 400px;"></video><br />
     <hr />
-    <button type="button" onclick="playvid()">play</button>
-    <button type="button" onclick="pausevid()">pause</button>
-    <button type="button" onclick="smallSize()">small</button>
-    <button type="button" onclick="mediumSize()">medium</button>
-    <button type="button" onclick="largeSize()">large</button>
+    <button type="button" onclick="playvid()" class="btn_ply" style="margin-left: 520px;">play</button>
+    <button type="button" onclick="pausevid()" class="btn_ply">pause</button>
+    <button type="button" onclick="smallSize()" class="btn_ply">small</button>
+    <button type="button" onclick="mediumSize()" class="btn_ply">medium</button>
+    <button type="button" onclick="largeSize()" class="btn_ply">large</button>
     <script src="index.js"></script>
   </body>
 </html>

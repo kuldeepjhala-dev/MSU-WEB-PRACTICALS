@@ -9,13 +9,16 @@ function pausevid() {
 }
 
 function smallSize() {
-  v.style.width = "400px";
+  v.style.width = "200px";
+  v.style.width = "100px";
 }
 
 function mediumSize() {
-  v.style.width = "700px";
+  v.style.width = "200px";
+  v.style.width = "200px";
 }
 
 function largeSize() {
-  v.style.width = "1000px";
+  v.style.width = "200px";
+  v.style.width = "300px";
 }

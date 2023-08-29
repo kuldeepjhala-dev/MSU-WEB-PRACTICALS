@@ -116,7 +116,6 @@ createSnow = function () {
   spawnSnow(snowflakesCount);
 };
 
-
 // export createSnow function if using node or CommonJS environment
 if (typeof module !== 'undefined') {
   module.exports = {

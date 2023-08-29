@@ -4,12 +4,39 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      .cred_title {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: darkslategray;
+      }
+      .cred_input_box {
+        background-color: aliceblue;
+      }
+    </style>
   </head>
   <body>
-    Name : <input type="text" id="uname" style="margin-bottom: 20px" />
-    <br />
-    Password : <input type="password" id="pwd" />
-    <button id="btn" onclick="Validate()">Login</button>
+    <table>
+      <th>
+        <tr>
+          <td class="cred_title">Name :</td>
+          <td><input type="text" id="uname" class="cred_input_box" /></td>
+        </tr>
+      </th>
+      <th>
+        <tr>
+          <td class="cred_title">Password :</td>
+          <td>
+            <input type="password" id="pwd" class="cred_input_box" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <button id="btn" onclick="Validate()">Login</button>
+          </td>
+        </tr>
+      </th>
+    </table>
+
     <script src="index.js"></script>
   </body>
 </html>
