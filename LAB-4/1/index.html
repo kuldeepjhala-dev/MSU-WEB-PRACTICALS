@@ -5,19 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-      .btn_ply{
+      .btn_ply {
         margin: 10px;
       }
     </style>
   </head>
-  <body style="background-color: bisque;">
-    <video id="vdo" src="video_1.mp4" controls style="margin-left: 400px;"></video><br />
+  <body style="background-color: bisque">
+    <video
+      id="vdo"
+      src="video_1.mp4"
+      controls
+      style="margin-left: 400px"
+    ></video
+    ><br />
     <hr />
-    <button type="button" onclick="playvid()" class="btn_ply" style="margin-left: 520px;">play</button>
+    <button
+      type="button"
+      onclick="playvid()"
+      class="btn_ply"
+      style="margin-left: 520px"
+    >
+      play
+    </button>
     <button type="button" onclick="pausevid()" class="btn_ply">pause</button>
     <button type="button" onclick="smallSize()" class="btn_ply">small</button>
     <button type="button" onclick="mediumSize()" class="btn_ply">medium</button>
     <button type="button" onclick="largeSize()" class="btn_ply">large</button>
-    <script src="index.js"></script>
+    <script src="index.js">
+            var v = document.getElementById("vdo");
+
+      function playvid() {
+        v.play();
+      }
+
+      function pausevid() {
+        v.pause();
+      }
+
+      function smallSize() {
+        v.style.width = "200px";
+        v.style.width = "100px";
+      }
+
+      function mediumSize() {
+        v.style.width = "200px";
+        v.style.width = "200px";
+      }
+
+      function largeSize() {
+        v.style.width = "200px";
+        v.style.width = "300px";
+      }
+    </script>
   </body>
 </html>

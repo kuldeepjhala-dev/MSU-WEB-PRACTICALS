@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      #main {
+        position: absolute;
+      }
+      #box {
+        position: relative;
+        display: inline-block;
+        font-size: 25px;
+        margin: 99px 15px;
+      }
+      #image {
+        height: 250px;
+        width: 250px;
+      }
+      #btn {
+        width: 300px;
+        height: 50px;
+        position: absolute;
+        top: 5%;
+        left: 40%;
+      }
+      #line1 {
+        position: absolute;
+        top: 47%;
+        left: 20px;
+        width: 68%;
+        height: 0px;
+        border: 15px solid black;
+      }
+      #line2 {
+        position: absolute;
+        top: 50.7%;
+        width: 0px;
+        height: 300px;
+        border: 15px solid black;
+        margin: auto 1057px;
+      }
+      #line3 {
+        position: absolute;
+        top: 91%;
+        width: 27%;
+        height: 0px;
+        border: 15px solid black;
+        margin: auto 1057px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="main">
+      <div id="box">
+        <img id="image" src="img_running.png" alt="" />
+      </div>
+    </div>
+    <div id="line1"></div>
+    <div id="line2"></div>
+    <div id="line3"></div>
+    <button id="btn">Click me to animate the box !</button>
+  </body>
+  <script>
+    $(document).ready(function () {
+      $("#btn").click(() => {
+        $("#box").animate(
+          {
+            left: "1170px",
+          },
+          {
+            duration: 2000,
+            complete: function () {
+              $("#image").attr("src", "img_scared.png");
+            },
+          }
+        );
+        $("#box").animate(
+          {
+            top: "200px",
+          },
+          {
+            duration: 2000,
+            complete: function () {
+              $("#image").attr("src", "img_fallen.jpeg");
+            },
+          }
+        );
+        $("#box").animate({
+          top: "350px",
+        });
+      });
+    });
+  </script>
+</html>

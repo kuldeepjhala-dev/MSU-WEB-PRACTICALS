@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <style>
+      #div1 {
+        width: 200px;
+        height: 200px;
+        background-color: blue;
+      }
+
+      button {
+        margin-top: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="div1"></div>
+    <button>Slide Toggle</button>
+    <script src="lab-5_1.js">
+              $(document).ready(function(){
+          $("button").click(function(){
+              $("#div1").slideToggle();
+          });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <style>
+      #div1 {
+        width: 5em;
+        height: 2em;
+        text-align: center;
+        background-color: blue;
+      }
+
+      button {
+        margin-top: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="div1">Kuldeep</div>
+    <button>Click Me</button>
+    <script src="lab-5_4.js">
+              $(document).ready(function(){
+          $("button").click(function(){
+              $("#div1").animate({'font-size':'100px',
+                                  width:'5em',
+                                  height:'2em'
+          });
+          });
+      });
+    </script>
+  </body>
+</html>
